@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRIMYY | Media • Tech • Business Solutions Unified</title>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Top Announcement / Geo Bar -->
+  <div class="top-geo-bar">
+    <div class="container top-geo-container">
+      <div class="geo-badge">
+        <!-- <span id="user-flag" class="flag-icon">🌐</span> -->
+        <!-- <span>Welcome visitor from <strong id="user-country">Worldwide</strong></span> -->
+      </div>
+      <div class="geo-announcement">
+        <span>⚡ <strong>0% Upfront:</strong> Pay only after service delivery & 100% satisfaction guarantee</span>
+      </div>
+      <div class="top-contacts">
+        <a href="tel:+2349125286497"><i class="fa-solid fa-phone"></i> +234 912 528 6497 | +2349058444670</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" onclick="navigateTo('home-view')">
+        <img src="./images/Primyy's logo.png" alt="" height="30" width="30" />
+        PRIMYY<span class="dot"></span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#overview" class="nav-link" onclick="navigateTo('home-view')">Overview</a>
+        <a href="#services" class="nav-link" onclick="navigateTo('home-view')">Services</a>
+        <a href="#about" class="nav-link" onclick="navigateTo('home-view')">About Us</a>
+        <a href="#contact" class="nav-link" onclick="navigateTo('home-view')">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Expandable Search Bar -->
+        <div class="search-box" id="searchBox">
+          <input type="text" id="searchInput" placeholder="Search services (e.g. Web, Branding)..." onkeyup="handleSearch()" />
+          <button class="search-btn" onclick="toggleSearch()" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <div class="search-results-dropdown" id="searchResults"></div>
+        </div>
+
+        <button class="btn btn-primary shimmer-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSdxkHs8QUr2LBdJByQVZfivxaDdkdVh4F967VNxguxgka9xRA/viewform?usp=sf_link'">
+          Book Service
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN VIEW CONTAINER -->
+  <main id="app-content">
+
+    <!-- HOME VIEW -->
+    <div id="home-view" class="page-view active-view">
+      
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-badge">A Tri-Fold Powerhouse Agency</div>
+          <h1 class="hero-title">Media, Technology & Business <span>Unified.</span></h1>
+          <p class="hero-subtitle">
+            We operate as an integrated unit across three core departments to scale your brand globally. No upfront payments required.
+          </p>
+          <div class="hero-cta-group">
+            <button class="btn btn-primary shimmer-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSdxkHs8QUr2LBdJByQVZfivxaDdkdVh4F967VNxguxgka9xRA/viewform?usp=sf_link'">Book a Service</button>
+            <a href="#services" class="btn btn-outline">Explore Capabilities</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Endless Carousel Section (10 Slides) -->
+      <section class="carousel-section">
+        <div class="carousel-track-container">
+          <div class="carousel-track" id="endlessTrack">
+            <!-- Slide 1: Media -->
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000&auto=format&fit=crop" alt="Photography & Videography" />
+              <div class="slide-overlay">
+                <span class="slide-tag">Media</span>
+                <h3>High-End Photography & Cinema</h3>
+                <p>Capturing brand essence through precision optics and storytelling.</p>
+              </div>
+            </div>
+            <!-- Slide 2: Media -->
+            <div class="carousel-slide">
+              <img src="./images/daniel-korpai-mxPiMiz7KCo-unsplash.jpg" alt="UI/UX & Graphics" />
+              <div class="slide-overlay">
+                <span class="slide-tag">Media</span>
+                <h3>UI/UX & Complete Branding</h3>
+                <p>Designing digital experiences that captivate and convert users.</p>
+              </div>
+            </div>
+            <!-- Slide 3: Media -->
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=1000&auto=format&fit=crop" alt="Live Transmission & Video Ad" />
+              <div class="slide-overlay">
+                <span class="slide-tag">Media</span>
+                <h3>Live Broadcast & Advertisements</h3>
+                <p>Seamless live video transmission and high-impact advertisements.</p>
+              </div>
+            </div>
+
+            <!-- Slide 4: Tech -->
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1000&auto=format&fit=crop" alt="Web Development" />
+              <div class="slide-overlay">
+                <span class="slide-tag">Tech</span>
+                <h3>Full-Stack Web Engineering</h3>
+                <p>High-performance web apps tailored for international scalability.</p>
+              </div>
+            </div>
+            <!-- Slide 5: Tech -->
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop" alt="Digital Transformation" />
+              <div class="slide-overlay">
+                <span class="slide-tag">Tech</span>
+                <h3>Digital Transformation</h3>
+                <p>Modernizing business operations through cloud and software solutions.</p>
+              </div>
+            </div>
+            <!-- Slide 6: Tech -->
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1000&auto=format&fit=crop" alt="Tech Training" />
+              <div class="slide-overlay">
+                <span class="slide-tag">Tech</span>
+                <h3>Corporate Tech Enablement</h3>
+                <p>Training teams in modern web technologies and digital tools.</p>
+              </div>
+            </div>
+
+            <!-- Slide 7: Business -->
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop" alt="Digital Marketing" />
+              <div class="slide-overlay">
+                <span class="slide-tag">Business</span>
+                <h3>Data-Driven Digital Marketing</h3>
+                <p>Accelerating brand presence with targeted performance marketing.</p>
+              </div>
+            </div>
+            <!-- Slide 8: Business -->
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop" alt="Customer Outreach" />
+              <div class="slide-overlay">
+                <span class="slide-tag">Business</span>
+                <h3>Global Customer Acquisition</h3>
+                <p>Connecting products directly with worldwide consumer markets.</p>
+              </div>
+            </div>
+            <!-- Slide 9: Business -->
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1000&auto=format&fit=crop" alt="Business Growth" />
+              <div class="slide-overlay">
+                <span class="slide-tag">Business</span>
+                <h3>Web Presence Enhancement</h3>
+                <p>Maximizing conversion rates and corporate credibility.</p>
+              </div>
+            </div>
+
+            <!-- Slide 10: Call to Action -->
+            <div class="carousel-slide contact-slide">
+              <img src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=1000&auto=format&fit=crop" alt="Contact Us" />
+              <div class="slide-overlay">
+                <span class="slide-tag highlight">24/7 Available</span>
+                <h3>Have Any Question? Speak With Us</h3>
+                <p>We are approachable, friendly, and ready to listen anytime.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Brief Overview Section -->
+      <section id="services" class="section services-overview">
+        <div class="container">
+          <div class="section-header">
+            <h2><span style="color: #2563EB;">Three</span> Disciplines, One <span style="color: #2563EB;">Unified</span> Vision</h2>
+            <p>Every project at PRIMYY gets synchronized execution across Media, Tech, and Business experts.</p>
+          </div>
+
+          <div class="category-grid">
+
+            <!-- Media Category Card -->
+            <div class="category-card media-card">
+              <div class="card-image-wrap">
+                <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=800&auto=format&fit=crop" alt="Media Department" class="interactive-img" />
+              </div>
+              <div class="card-body">
+                <h3>Media Production & Design</h3>
+                <p class="summary-text">Crafting high-impact visuals, UI/UX systems, live streams, and complete commercial brand identities.</p>
+                <ul class="feature-list">
+                  <li><i class="fa-solid fa-check"></i> Photography & Cinematic Videography</li>
+                  <li><i class="fa-solid fa-check"></i> UI/UX & Graphics Design</li>
+                  <li><i class="fa-solid fa-check"></i> Video Ads & Live Transmission</li>
+                </ul>
+                <button class="btn btn-secondary shimmer-btn" onclick="openCategory('media')">Explore Media <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+
+            <!-- Tech Category Card -->
+            <div class="category-card tech-card">
+              <div class="card-image-wrap">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop" alt="Tech Department" class="interactive-img" />
+              </div>
+              <div class="card-body">
+                <h3>Tech & Web Engineering</h3>
+                <p class="summary-text">Building modern web infrastructure, digital transformations, and bespoke tech platforms.</p>
+                <ul class="feature-list">
+                  <li><i class="fa-solid fa-check"></i> Web Development & Web Apps</li>
+                  <li><i class="fa-solid fa-check"></i> Business Web Presence Enhancement</li>
+                  <li><i class="fa-solid fa-check"></i> Tech & Multimedia Training</li>
+                </ul>
+                <button class="btn btn-secondary shimmer-btn" onclick="openCategory('tech')">Explore Tech <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+
+            <!-- Business Category Card -->
+            <div class="category-card business-card">
+              <div class="card-image-wrap">
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop" alt="Business Department" class="interactive-img" />
+              </div>
+              <div class="card-body">
+                <h3>Business Growth & Marketing</h3>
+                <p class="summary-text">Expanding customer reach, market penetration, and revenue using technological leverage.</p>
+                <ul class="feature-list">
+                  <li><i class="fa-solid fa-check"></i> Data-Driven Digital Marketing</li>
+                  <li><i class="fa-solid fa-check"></i> Customer Acquisition Systems</li>
+                  <li><i class="fa-solid fa-check"></i> Strategic Brand Positioning</li>
+                </ul>
+                <button class="btn btn-secondary shimmer-btn" onclick="openCategory('business')">Explore Business <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Payment Guarantee Section -->
+      <section class="guarantee-section">
+        <div class="container guarantee-container">
+          <div class="guarantee-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="guarantee-text">
+            <h2>Our Zero-Risk Guarantee</h2>
+            <p>
+              <strong>We only accept payment AFTER our service has been fully rendered and approved by you.</strong> 
+              No deposit required to get started. We take orders globally from any country in the world.
+            </p>
+          </div>
+          <button class="btn btn-primary shimmer-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSdxkHs8QUr2LBdJByQVZfivxaDdkdVh4F967VNxguxgka9xRA/viewform?usp=sf_link'">Start Your Project Risk-Free</button>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section id="about" class="section about-section">
+        <div class="container grid-2">
+          <div class="about-content">
+            <div class="section-tag">Who We Are</div>
+            <h2>A Collective of Specialist Talents Working As One</h2>
+            <p>
+              At <strong style="color: #2563EB;">PRIMYY</strong>, we bring together specialized skills across media creation, software engineering, and business growth under one roof. Instead of dealing with fragmented freelancers, you get an elite team executing every detail of your project in unison.
+            </p>
+            <p>
+              Whether you need a high-converting web application, visual branding, or market outreach, all three departments collaborate on your contract to ensure maximum return on investment.
+            </p>
+            <div class="stats-row">
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Satisfaction Standard</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Client Support</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">Global</span>
+                <span class="stat-label">Service Reach</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop" alt="PRIMYY Team Collaborating" class="interactive-img parallax-img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact & Support Section -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>We are available 24/7. Reach out via phone, email, or social media anytime.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <i class="fa-solid fa-phone-volume"></i>
+              <h3>Call / WhatsApp Support</h3>
+              <p><a href="tel:+2349125286497">+234 912 528 6497</a></p>
+              <p><a href="tel:+2349058444670">+234 905 844 4670</a></p>
+            </div>
+
+            <div class="contact-card" onclick="composeEmail()" style="cursor: pointer;">
+              <i class="fa-solid fa-envelope-open-text"></i>
+              <h3>Email Us Directly</h3>
+              <p style="color: #0051ff; text-decoration: underline;">primyyofficial@gmail.com</p>
+              <span class="sub-text">24/7 Rapid Response</span>
+            </div>
+
+            <div class="contact-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <h3>Our Head Office</h3>
+              <p>Room 8, Ground floor, Iranlowo Hostel, Adenike, Ogbomosho North, Ogbomosho, Oyo State, Nigeria.</p>
+              <span class="sub-text">ZIP: 210214</span>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links-wrapper">
+            <h3>Connect On Social Media</h3>
+            <div class="social-icons">
+              <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="social-btn"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://wa.me/2349125286497" target="_blank" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CATEGORY EXPLORE VIEW -->
+    <div id="category-view" class="page-view">
+      <div class="container section">
+        <button class="btn btn-outline back-btn" onclick="navigateTo('home-view')">
+          <i class="fa-solid fa-arrow-left"></i> Back to Main Page
+        </button>
+        <div id="category-content">
+          <!-- Dynamically populated via JavaScript -->
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <h3>PRIMYY<span></span></h3>
+        <p>Media • Tech • Business Solutions</p>
+        <p class="address-text">
+          Room 8, Ground Floor, Iranlowo Hostel, Adenike, Ogbomosho North, Ogbomosho, Oyo State, Nigeria (ZIP: 210214)
+        </p>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 PRIMYY Company. All rights reserved. Payment collected only post-delivery.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
